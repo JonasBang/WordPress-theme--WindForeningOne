@@ -108,10 +108,9 @@ add_action( 'widgets_init', 'jbwindtwo_widgets_init' );
 /* VARIABLES */	
 
 include("includes/reset.php");	
-$themename = "Organic";
-$shortname = "organic";
+$themename = "JB Wind Two";
+$shortname = "jbwindtwo";
 $diff_stylesheets = array("Blue","Green","Brown");
-$diff_logos = array("Bullseye","Butterfly","Crown","Diamonds","Default","Female","Fern","Flower","Flower2","Foot","Grass","Hand","Heart","Leaf","Leaves1","Male","Moon","Music","Paws","Plant","Puzzle","Snowflake","Star","Star2","Star3","Sun","Tree","Water","World","Yinyang");
 $organic_pages_ob = get_pages('sort_column=menu_order');
 $organic_pages = array();
 foreach ($organic_pages_ob as $organic_page) { $organic_pages[$organic_page->ID] = str_replace("-"," ",$organic_page->post_title); }
@@ -195,7 +194,7 @@ function mytheme_add_admin() {
         }
     }
 
-    add_theme_page($themename." Options", "".$themename." Options", 'edit_themes', basename(__FILE__), 'mytheme_admin');
+    add_theme_page("Tema setup", "Tema setup", 'edit_themes', basename(__FILE__), 'mytheme_admin');
 
 }
 
