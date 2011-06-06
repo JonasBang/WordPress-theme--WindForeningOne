@@ -48,6 +48,51 @@ include("includes/options.php");
 
 /* END VARIABLES */
 
+/* ADD DESCRIPTION TO MENU */
+
+class description_walker extends Walker_Nav_Menu
+{
+      function start_el(&$output, $item, $depth, $args)
+      {
+           global $wp_query;
+           $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+           $class_names = $value = '';
+
+           $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+
+           $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
+           $class_names = ' class="'. esc_attr( $class_names ) . '"';
+
+           $output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
+
+           $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+           $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+           $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+           $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+           $prepend = '<strong>';
+           $append = '</strong>';
+           $description  = ! empty( $item->description ) ? '<span>'.esc_attr( $item->description ).'</span>' : '';
+
+           if($depth != 0)
+           {
+                     $description = $append = $prepend = "";
+           }
+
+            $item_output = $args->before;
+            $item_output .= '<a'. $attributes .'>';
+            $item_output .= $args->link_before .$prepend.apply_filters( 'the_title', $item->title, $item->ID ).$append;
+            $item_output .= $description.$args->link_after;
+            $item_output .= '</a>';
+            $item_output .= $args->after;
+
+            $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+            }
+}
+
+/* END ADD DESCRIPTION TO MENU */
+
 /* OPTIONS PAGE */
 
 function mytheme_add_admin() {
@@ -297,4 +342,39 @@ case "checkbox":
 /* ADD MENU */
 add_action('admin_menu', 'mytheme_add_admin'); 
 /* END ADD MENU */
+
+/** Tell WordPress to run jbwindtwo_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'jbwindtwo_setup' );
+
+if ( ! function_exists( 'jbwindtwo_setup' ) ):
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which runs
+ * before the init hook. The init hook is too late for some features, such as indicating
+ * support post thumbnails.
+ *
+ * To override jbwindtwo_setup() in a child theme, add your own jbwindtwo_setup to your child theme's
+ * functions.php file.
+ *
+ * @uses add_theme_support() To add support for post thumbnails and automatic feed links.
+ * @uses register_nav_menus() To add support for navigation menus.
+ * @uses add_custom_background() To add support for a custom background.
+ * @uses add_editor_style() To style the visual editor.
+ * @uses load_theme_textdomain() For translation/localization support.
+ * @uses add_custom_image_header() To add support for a custom header.
+ * @uses register_default_headers() To register the default custom header images provided with the theme.
+ * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
+ *
+ * @since Twenty Ten 1.0
+ */
+function jbwindtwo_setup() {
+
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Navigation', 'twentyten' ),
+	) );
+}
+endif;
+
 ?>

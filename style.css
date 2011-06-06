@@ -264,49 +264,14 @@ h1#logo .small-logo {
 	padding: 0;
 	background: #333;
 }
+
 #nav-inner {
 	padding: 16px 25px 0;
 }
-
 #nav-inner ul li {
 	list-style: none;
 }
 
-#nav {
-	float: left;
-}
-
-#nav .first { border-left:0px; padding-left:0px; }
-
-#nav li {
-	float: left;
-	height: 70px;
-	width: 120px;
-	padding: 0 20px;
-	color: #fff;
-	border-left: 1px solid #8d9188;
-        font-family: Arial, helvetica, "sans serif";
-}
-
-
-#nav li h5 {
-	padding-bottom: 10px;
-	text-shadow: #252525 0 2px 0;
-        font-size: 14px;
-}
-#nav li h5 a {
-	color: #fff;
-	font-weight: bold;
-        font-size: 14px;
-}
-#nav li h5 a:hover {
- text-shadow: none;
-}
-#nav li p {
-	line-height: 1.6em;
-	font-size: 12px;
-	color: #ccc;
-}
 .feed-box {
 	float: right;
 	font-size: 11px;
@@ -774,29 +739,24 @@ table#wp-calendar tbody td#today {
 	padding-bottom: 13px;
     list-style:none;	
 }
-
 .footerlinks {
 	color: #ccc;
 	font-size: 11px;
 	padding: 15px 0 30px 0;
         font-family: Arial, helvetica, "sans serif";
 }
-
 .footerlinks a{
 	color: #ccc;
         font-family: Arial, helvetica, "sans serif";
 }
-
 .footerlinks a:hover{
 	color: #ccc;
 }
-
 .allrights {
 	margin-top: 18px;
 	float: left;
         font-family: Arial, helvetica, "sans serif";
 }
-
 .credit {
 	margin: 0;
 	text-align: right;
@@ -804,46 +764,39 @@ table#wp-calendar tbody td#today {
         font-family: Arial, helvetica, "sans serif";
 }
 
+/* Structure the footer area */
+#footer-widget-area {
+	overflow: hidden;
+}
+#footer-widget-area .widget-area {
+	float: left;
+	margin-right: 20px;
+	width: 220px;
+}
+#footer-widget-area #fourth {
+	margin-right: 0;
+}
+
 /* TABS */
-#tabs {
-	float: right;
-	width: 245px;
-	padding: 32px 25px 0px 0px;
-	margin-bottom:-32px;
-}
-
-#tabs p{
-	padding: 5px 0 10px 0;
-	font-size: 0.688em;
-}
-
-#tabs ul li {
-	list-style: none;
-}
-
 .widget {
 width: 245px;
 background: #ffffff;
 margin-bottom: 30px;
 }
-
 	.widget a {
 	color: #333333;
 	text-decoration: none;
 	}
-	
 	.widget a:hover {
 	color: #333333;
 	text-decoration: underline;
 	}
-
 	.tabnav li {
 	display: inline;
 	list-style: none;
 	padding-right: 0px;
 	background-color:#FFFFFF;
 	}
-	
 		.tabnav li a {
 		text-decoration: none;
 		color: #ffffff;
@@ -854,7 +807,6 @@ margin-bottom: 30px;
 		font-size:12px;
                 font-family: Arial, helvetica, "sans serif";
 		}
-		
 		.tabnav li a:hover, .tabnav li a:active, .tabnav li.ui-tabs-selected a {
 		background: #333333;
 		color: #ffffff;
@@ -862,30 +814,28 @@ margin-bottom: 30px;
 		font-size:12px;
                 font-family: Arial, helvetica, "sans serif";
 		}
-		
 	.tabdiv {
 	margin-top: 10px;
 	padding: 0px 15px 0px 0;
 	}
-	
 		.tabdiv ul {		
 		border-top: none;
 		margin: 0 0 0 15px;
 		padding: 0px 0 0 0;
                 font-family: Arial, helvetica, "sans serif";
 		}
-		
 		.tabdiv li {		
 		margin: -1px 0 0px 0;
 		line-height:15px;
 		padding: 10px 0 10px 0;
 		font-size: 0.688em;
 		}
-
 .ui-tabs-hide {
 		display: none;
-		}
-#social img { padding-right: 5px; }	
+}
+#social img {
+        padding-right: 5px;
+}	
 
 /* text widgets */
 
@@ -896,6 +846,178 @@ margin-bottom: 30px;
 }
 .textwidget a {
 	font-family: Arial, helvetica, "sans serif";
-    font-size:12px;	
-	text-decoration:underline;
+        font-size:12px;	
+	text-decoration:none;
 }
+.textwidget a:hover {
+	text-decoration: underline;
+}
+
+/*******************************************************************/
+/* CSS for menu, taken from Twenty Ten */
+/*******************************************************************/
+#access .menu,
+#access div.menu ul,
+.navigation {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+#access .menu-header,
+div.menu {
+	margin: 0 auto;
+	width: 940px;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+#access {
+	background: #333333;
+	display: block;
+	float: left;
+	margin: 0 auto;
+	width: 850px;
+}
+#access .menu-header,
+div.menu {
+	font-size: 13px;
+	margin-left: 0px;
+	width: 850px;
+}
+#access .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin: 0;
+}
+#access .menu-header li,
+div.menu li {
+	float: left;
+	position: relative;
+        border-right: 1px solid #888;
+}
+#access a {
+	color: #aaa;
+	display: block;
+	line-height: 38px;
+	padding: 0 30px 0 15px;
+	text-decoration: none;
+        width: 120px;
+}
+#access li a strong {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+}
+#access li a span {
+        display: block;
+        font-size: 12px;
+        line-height: 16px;
+}
+#access ul ul {
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	float: left;
+	width: 180px;
+	z-index: 99999;
+}
+#access ul ul li {
+	min-width: 180px;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background: #333;
+	line-height: 1em;
+	padding: 10px;
+	width: 160px;
+	height: auto;
+}
+#access li:hover > a,
+#access ul ul :hover > a {
+	background: #333;
+	color: #fff;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+	color: #fff;
+}
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+	color: #fff;
+}
+#access,
+.navigation {
+	-webkit-text-size-adjust: 120%;
+}
+
+/* =Navigation
+-------------------------------------------------------------- */
+.navigation {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+	overflow: hidden;
+}
+.navigation a:link,
+.navigation a:visited {
+	color: #888;
+	text-decoration: none;
+}
+.navigation a:active,
+.navigation a:hover {
+	color: #ff4b33;
+}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#nav-above {
+	margin: 0 0 18px 0;
+}
+#nav-above {
+	display: none;
+}
+.paged #nav-above,
+.single #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: -18px 0 0 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+/*
+.skip-link a {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+}
+.skip-link a:active,
+.skip-link a:focus {
+        top: 9999px;
+        left: 9999px;
+}
+*/
