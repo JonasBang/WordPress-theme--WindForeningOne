@@ -315,58 +315,48 @@ h3.storytitle a:hover {
 	margin: 0;
 	padding: 0px 0 10px 0;
 }
-
 .storycontent ul, ol{
 	margin: 0px 0 15px 0;
 	font-size: 12px;
 	line-height: 1.4em;
 }
-
 .storycontent ul li{
 	list-style: disc;
 	margin: 0 0 0 25px;
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 }
-
 .storycontent ol li{
 	margin: 0 0 0 30px;
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 }
-
 .storycontent dl dt {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 }
-
 .storycontent dl dd {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 	margin-left:15px;
 }
-
 .storycontent table thead th {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
     padding-bottom:5px;
 }
-
 .storycontent table thead tr td {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 }
-
 .storycontent pre {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 }
-
 .storycontent address {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;
 }
-
 .storycontent p {
 	font-size: 12px;
 	line-height: 18px;
@@ -374,52 +364,46 @@ h3.storytitle a:hover {
 	padding: 0px;
     font-family: Arial, helvetica, "sans serif";        
 }
-
 .storycontent h1 {
 	font-family: Arial, helvetica, "sans serif";
-        font-size:26px;	
-        margin-bottom:4px;
+        font-size: 26px;	
+        margin-bottom: 10px;
+        line-height: 1.5em;
 }
-
 .storycontent h2 {
 	font-family: Arial, helvetica, "sans serif";
-        font-size:18px;	
-        margin-bottom:4px;
+        font-size: 22px;	
+        margin-bottom: 8px;
+        line-height: 1.4em;
 }
-
 .storycontent h3 {
 	font-family: Arial, helvetica, "sans serif";
-    font-size:12px;
-	font-weight:bold;	
+        font-size: 18px;
+        margin-bottom: 6px;
+        line-height: 1.3em;
 }
-
 .storycontent h4 {
 	font-family: Arial, helvetica, "sans serif";
-    font-size:14px;	
+        font-size: 14px;	
 }
-
 .storycontent h5 {
 	font-family: Arial, helvetica, "sans serif";
-    font-size:12px;	
+        font-size: 12px;	
 }
-
 .storycontent h6 {
 	font-family: Arial, helvetica, "sans serif";
-    font-size:10px;	
+        font-size: 10px;	
 }
-
 .storycontent form {
 	margin-bottom:10px;
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;	
 }
-
 .storycontent strong {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;	
 	font-weight:bold;
 }
-
 .storycontent em {
 	font-family: Arial, helvetica, "sans serif";
     font-size:12px;	
