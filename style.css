@@ -160,8 +160,8 @@ body {
 
 #menu {
 	float: right;
-	width: 245px;
-	padding: 32px 25px 40px;
+	width: 255px;
+	padding: 20px;
 }
 
 #footer {
@@ -600,7 +600,7 @@ H6 {
 	}	
 
 #menu ul li {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	list-style: none;
 }
 #menu ul li ul {
