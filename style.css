@@ -196,37 +196,6 @@ h1#logo .small-logo {
 	float: left;
 	padding-right: 10px;
 }
-
-#searchform {
-	float: right;
-	width: 245px;
-	height: 34px;
-	margin: 27px 25px 0 0;
-	background: url(img/search-bg.gif) left center no-repeat;
-}
-#searchform input {
-	border: 0;
-	background: 0;
-}
-#searchform input#s {
-	float: left;
-	width: 180px;
-	margin: 5px 0 0 5px;
-	color: #666;
-        font-family: Arial, helvetica, "sans serif";
-        font-size: 12px;
-}
-#searchform input[type="submit"] {
-	float: right;
-	width: 30px;
-	height: 30px;
-	margin-right: 15px;
-	line-height: 0;
-	text-indent: -999em;
-	overflow: hidden;
-	cursor: pointer;
-}
-
 #head-sub {
 	width: 960px;
 	height: 66px;
@@ -764,80 +733,35 @@ table#wp-calendar tbody td#today {
         font-family: Arial, helvetica, "sans serif";
 }
 
-/* Structure the footer area */
+/* Structure the footer area  (870px total) */
 #footer-widget-area {
 	overflow: hidden;
 }
 #footer-widget-area .widget-area {
 	float: left;
 	margin-right: 20px;
-	width: 220px;
+	width: 202px;
 }
 #footer-widget-area #fourth {
 	margin-right: 0;
 }
 
-/* TABS */
+/* WIDGET */
 .widget {
 width: 245px;
 background: #ffffff;
 margin-bottom: 30px;
 }
-	.widget a {
+.widget a {
 	color: #333333;
 	text-decoration: none;
-	}
-	.widget a:hover {
+}
+.widget a:hover {
 	color: #333333;
 	text-decoration: underline;
-	}
-	.tabnav li {
-	display: inline;
-	list-style: none;
-	padding-right: 0px;
-	background-color:#FFFFFF;
-	}
-		.tabnav li a {
-		text-decoration: none;
-		color: #ffffff;
-		font-weight: bold;
-		padding: 12px 16px 12px 15px;
-		outline: none;
-		line-height: 1.6em;
-		font-size:12px;
-                font-family: Arial, helvetica, "sans serif";
-		}
-		.tabnav li a:hover, .tabnav li a:active, .tabnav li.ui-tabs-selected a {
-		background: #333333;
-		color: #ffffff;
-		text-decoration: none;
-		font-size:12px;
-                font-family: Arial, helvetica, "sans serif";
-		}
-	.tabdiv {
-	margin-top: 10px;
-	padding: 0px 15px 0px 0;
-	}
-		.tabdiv ul {		
-		border-top: none;
-		margin: 0 0 0 15px;
-		padding: 0px 0 0 0;
-                font-family: Arial, helvetica, "sans serif";
-		}
-		.tabdiv li {		
-		margin: -1px 0 0px 0;
-		line-height:15px;
-		padding: 10px 0 10px 0;
-		font-size: 0.688em;
-		}
-.ui-tabs-hide {
-		display: none;
 }
-#social img {
-        padding-right: 5px;
-}	
 
-/* text widgets */
+/* Text widgets */
 
 .textwidget {
 	font-family: Arial, helvetica, "sans serif";
@@ -851,6 +775,54 @@ margin-bottom: 30px;
 }
 .textwidget a:hover {
 	text-decoration: underline;
+}
+
+/* =Widget Areas
+-------------------------------------------------------------- */
+
+.widget-area {
+	color: #ddd;
+        font-size: 12px;
+}
+.widget-area ul {
+	list-style: none;
+	margin-left: 0;
+}
+.widget-area ul ul {
+	list-style: square;
+	margin-left: 1.3em;
+}
+.widget-area select {
+	max-width: 100%;
+}
+.widget-area a {
+        color: #ddd;
+        font-size: 12px;
+}
+.widget-area a:link,
+.widget-area a:visited {
+	text-decoration: none;
+}
+.widget-area a:active,
+.widget-area a:hover {
+	text-decoration: underline;
+}
+.widget-area .entry-meta {
+	font-size: 11px;
+}
+.widget_search #s {/* This keeps the search inputs in line */
+	width: 60%;
+}
+.widget_search label {
+	display: none;
+}
+.widget-container {
+	margin: 0 0 18px 0;
+}
+.widget-title {
+        font-size: 14px;
+	font-weight: bold;
+	color: #fff;
 }
 
 /*******************************************************************/
