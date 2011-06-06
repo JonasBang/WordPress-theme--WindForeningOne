@@ -16,8 +16,11 @@ table#wp-calendar tfoot a,
 {
 	color: #4a788b;
 }
+h1#logo {
+        text-shadow: #afc1c9 2px 2px 1px;
+}
 .blog-desc {
- text-shadow: #afc1c9 0 1px 0;
+        text-shadow: #afc1c9 1px 1px 1px;
 }
 table#wp-calendar caption, table#wp-calendar th, table#wp-calendar td {
 	background-color:#DCE4E7;

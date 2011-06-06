@@ -121,8 +121,6 @@ img[align="left"] { float: left; clear: left; }
 img[align="right"] { float: right; clear: right; }
 img[align="middle"] { display: block; margin-right: auto; margin-left: auto; float: none; clear: both; }
 
-
-
 .right {
 	float: right;
 }
@@ -174,7 +172,6 @@ body {
 }
 
 /* Header */
-
 #head-top {
 	width: 920px;
 	height: 101px;
@@ -183,18 +180,17 @@ body {
 }
 h1#logo {
 	float: left;
-	margin: 25px;
-	padding: 0;
-	line-height: 40px;
+	padding-left: 40px;
+        padding-right: 20px;
+	line-height: 66px;
 	font-size: 30px;
-	text-shadow: #e7e7e5 0 2px 0;
-        font-weight:bold;
+        font-weight: bold;
 }
 h1#logo a {
 	color: #333;
 }
 h1#logo a:hover {
- text-shadow: #e7e7e5 0 1px 0;
+        text-decoration: none;
 }
 h1#logo .small-logo {
 	float: left;
@@ -212,7 +208,6 @@ h1#logo .small-logo {
 	border: 0;
 	background: 0;
 }
-
 #searchform input#s {
 	float: left;
 	width: 180px;
@@ -235,15 +230,18 @@ h1#logo .small-logo {
 #head-sub {
 	width: 960px;
 	height: 66px;
-	margin: 0;
-	padding: 0;
 }
 .blog-desc {
 	float: left;
-	padding-left: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+	padding-left: 20px;
+        padding-top: 5px;
 	font-size: 14px;
 	font-weight: bold;
-	line-height: 66px;
+        color: #555;
+	line-height: 41px;
+        border-left: 1px solid #555;
 }
 .rss-feed {
 	float: right;
@@ -706,7 +704,6 @@ table#wp-calendar tbody td#today {
 }
 
 
-
 /* Footer */
 
 #connect {
@@ -752,7 +749,6 @@ table#wp-calendar tbody td#today {
 .lastfm-link a {
 	background-image: url(img/lastfm.gif);
 }
-
 #foot-cloud {
 	float: left;
 	width: 375px;
@@ -762,7 +758,6 @@ table#wp-calendar tbody td#today {
 	color: #fff;
         font-family: Arial, helvetica, "sans serif";
 }
-
 #foot-menu {
 	float: right;
 }

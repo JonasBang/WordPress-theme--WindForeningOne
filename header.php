@@ -21,15 +21,12 @@
 <div id="rap">
 <div id="header">
 	<div id="head-top">
-		<h1 id="logo"><img src="<?php echo bloginfo('template_directory'); ?>/img/logos/<?php echo get_option('organic_theme_logo'); ?>.gif" class="small-logo" alt="logo" width="40" height="40" /><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
-		<form id="searchform" method="get" action="<?php bloginfo('home'); ?>">
-			<input onfocus="if (this.value == 'search this site') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search this site';}" type="text" value="search this site" name="s" id="s" />
-			<input type="submit" value="<?php esc_attr_e(''); ?>" />
-		</form>
+		<p>Placer billede her</p>
 	</div>
 	<div id="head-sub">
+                <h1 id="logo"><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 		<p class="blog-desc"><?php bloginfo('description'); ?></p>
-		<p class="rss-feed"><a href="<?php if (get_option('organic_feedburner') == "#") { bloginfo('rss2_url'); } else { echo get_option('organic_feedburner' );} ?>" title="<?php _e('Syndicate this site using RSS'); ?>" rel="nofollow"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr>'); ?></a></p>
+                <p class="rss-feed"><a href="<?php bloginfo('url'); ?>/feed/" title="F&#248;lg med i seneste nyt via RSS feed"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr>'); ?></a></p>
 	</div>
 	<div id="navigation">
 		<div id="nav-inner">

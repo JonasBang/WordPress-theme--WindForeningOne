@@ -13,8 +13,11 @@ table#wp-calendar tbody a,
 {
 	color: #616B50;
 }
+h1#logo {
+        text-shadow: #dae1d4 2px 2px 1px;
+}
 .blog-desc {
- text-shadow: #dae1d4 0 1px 0;
+        text-shadow: #dae1d4 1px 1px 1px;
 }
 table#wp-calendar caption, table#wp-calendar th, table#wp-calendar td {
 	background-color:#E7EAE1;
