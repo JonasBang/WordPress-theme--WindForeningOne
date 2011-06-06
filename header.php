@@ -9,7 +9,7 @@
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/styles/<?php echo get_option('organic_theme_style'); ?>.css" type="text/css" media="screen, projection" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_get_archives('type=monthly&format=link'); ?>
@@ -21,7 +21,9 @@
 <div id="rap">
 <div id="header">
 	<div id="head-top">
-		<p>Placer billede her</p>
+            <div id="head-pic">
+                <img src="<?php echo bloginfo('template_directory'); ?>/img/header/header_logo.jpg" width="900" height="81" alt="" />
+            </div>
 	</div>
 	<div id="head-sub">
                 <h1 id="logo"><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
