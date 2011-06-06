@@ -21,9 +21,9 @@
 <div id="rap">
 <div id="header">
 	<div id="head-top">
-            <div id="head-pic">
-                <img src="<?php echo bloginfo('template_directory'); ?>/img/header/header_logo.jpg" width="900" height="81" alt="" />
-            </div>
+            <div id="head-box">
+                    <img src="<?php echo bloginfo('template_directory'); ?>/img/header/header_logo.jpg" width="900" height="81" alt="" />
+             </div>
 	</div>
 	<div id="head-sub">
                 <h1 id="logo"><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
