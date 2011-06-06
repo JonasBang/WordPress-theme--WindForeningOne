@@ -9,8 +9,8 @@ get_header();
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 	<h3 class="storytitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-	<p class="comment-count"><?php comments_popup_link(__('<span class="count">0</span> comments'), __('<span class="count">1</span> comment'), __('<span class="count">%</span> comments')); ?></p>
-	<p class="meta">Posted on <?php the_time('jS F Y') ?> by <?php the_author() ?> <?php if (!is_page()) { ?> in <?php the_category(' |'); } ?></p>
+	<p class="comment-count"><?php comments_popup_link(__('<span class="count">0</span> kommentarer'), __('<span class="count">1</span> kommentar'), __('<span class="count">%</span> kommentarer')); ?></p>
+	<p class="meta">Skrevet <?php the_time('j. F Y') ?> af <?php the_author() ?> <?php if (!is_page()) { ?> i <?php the_category(' |'); } ?></p>
 	<p class="the-tags"><?php the_tags(__(''), ', ', ''); ?></p>
 	<div class="storycontent">
 		<?php the_content(__('(more...)')); ?>
@@ -25,13 +25,13 @@ get_header();
 <?php comments_template(); ?>
 
 <?php endwhile; else: ?>
-<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<p><?php _e('Beklager, ingen indlæg matcher dine kriterier.'); ?></p>
 <?php endif; ?>
 <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } else { ?>
-      <div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-		</div>
+        <div class="navigation">
+		<div class="alignleft"><?php next_posts_link('&laquo; &#198;ldre indl&#230;g') ?></div>
+		<div class="alignright"><?php previous_posts_link('Nyere indl&#230;g &raquo;') ?></div>
+	</div>
 <?php } ?>
 </div>
 <?php get_footer(); ?>

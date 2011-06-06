@@ -5,19 +5,19 @@
  */
 
 if ( post_password_required() ) : ?>
-<p><?php _e('Enter your password to view comments.'); ?></p>
+<p><?php _e('Login for at se kommentarer.'); ?></p>
 <?php return; endif; ?>
 
 <?php if ( have_comments() ) : ?>
-<h6><span class="blue"><?php comments_number('0', '1', '%' );?></span> Comments</h6>
+<h6><span class="blue"><?php comments_number(__('0 kommentarer'), __('1 kommentar'), __('% kommentarer')); ?></h6>
 <ol id="commentlist">
 
 <?php foreach ($comments as $comment) : ?>
 	<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
 	<?php echo get_avatar( $comment, 50 ); ?>
-	<p><cite><?php comment_author_link() ?> </cite> says: </p>
+	<p><cite><?php comment_author_link() ?>:</cite></p>
 	<?php comment_text() ?>
-	<p class="commentdate"><?php the_time('jS F Y') ?> at <a href="#comment-<?php comment_ID() ?>"><?php comment_time() ?></a></cite> <?php edit_comment_link(__(" Edit This"), ' |'); ?></p>
+	<p class="commentdate"><?php the_time('j. F Y') ?> kl. <?php comment_time() ?><?php edit_comment_link(__(" Rediger"), ' |'); ?></p>
 	</li>
 
 <?php endforeach; ?>
@@ -25,23 +25,23 @@ if ( post_password_required() ) : ?>
 </ol>
 
 <?php else : // If there are no comments yet ?>
-	<p><?php _e('No comments yet.'); ?></p>
+	<p><?php _e('Ingen kommentarer.'); ?></p>
 <?php endif; ?>
 
 
 
 <?php if ( comments_open() ) : ?>
-<h6 id="postcomment"><?php _e('Leave a comment'); ?></h6>
+<h6 id="postcomment"><?php _e('Skriv kommentar'); ?></h6>
 
 <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-<p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.'), wp_login_url( get_permalink() ) );?></p>
+<p><?php printf(__('Du skal <a href="%s">logge ind</a> for at kommentere.'), wp_login_url( get_permalink() ) );?></p>
 <?php else : ?>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
 <?php if ( is_user_logged_in() ) : ?>
 
-<p class="user-in"><?php printf(__('Logged in as %s.'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out of this account') ?>"><?php _e('Log out &raquo;'); ?></a></p>
+<p class="user-in"><?php printf(__('Logged ind som %s.'), '<a href="'.get_option('siteurl').'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out of this account') ?>"><?php _e('Log out &raquo;'); ?></a></p>
 
 <?php else : ?>
 
