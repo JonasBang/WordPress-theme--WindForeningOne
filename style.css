@@ -240,7 +240,7 @@ h1#logo .small-logo {
 }
 
 #nav-inner {
-	padding: 16px 25px 0;
+	padding: 16px 15px 0;
 }
 #nav-inner ul li {
 	list-style: none;
@@ -816,11 +816,6 @@ margin-bottom: 30px;
 .navigation {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
-#access .menu-header,
-div.menu {
-	margin: 0 auto;
-	width: 940px;
-}
 
 /* =Menu
 -------------------------------------------------------------- */
@@ -829,7 +824,7 @@ div.menu {
 	display: block;
 	float: left;
 	margin: 0 auto;
-	width: 850px;
+	width: 890px;
 }
 #access .menu-header,
 div.menu {
@@ -850,6 +845,12 @@ div.menu li {
 }
 #access .menu-header li:first-child,
 div.menu li:first-child {
+        border: none;
+}
+#access .menu-header ul .sub-menu {
+        margin: 32px 0;
+}
+#access .sub-menu li {
         border: none;
 }
 #access a {
@@ -879,7 +880,7 @@ div.menu li:first-child {
 	top: 38px;
 	left: 0;
 	float: left;
-	width: 180px;
+	width: 165px;
 	z-index: 99999;
 }
 #access ul ul li {
@@ -890,10 +891,10 @@ div.menu li:first-child {
 	top: 0;
 }
 #access ul ul a {
-	background: #333;
+	background: #444;
 	line-height: 1em;
-	padding: 10px;
-	width: 160px;
+	padding: 10px 15px;
+	width: 135px;
 	height: auto;
 }
 #access li:hover > a,
