@@ -846,7 +846,11 @@ div.menu ul {
 div.menu li {
 	float: left;
 	position: relative;
-        border-right: 1px solid #888;
+        border-left: 1px solid #888;
+}
+#access .menu-header li:first-child,
+div.menu li:first-child {
+        border: none;
 }
 #access a {
 	color: #aaa;
