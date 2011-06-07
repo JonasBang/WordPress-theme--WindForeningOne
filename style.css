@@ -891,7 +891,7 @@ div.menu li:first-child {
 	top: 0;
 }
 #access ul ul a {
-	background: #444;
+	background: #333;
 	line-height: 1em;
 	padding: 10px 15px;
 	width: 135px;
@@ -900,6 +900,11 @@ div.menu li:first-child {
 #access li:hover > a,
 #access ul ul :hover > a {
 	background: #333;
+	color: #fff;
+}
+#access .sub-menu li:hover > a,
+#access .sub-menu ul ul :hover > a {
+	background: #444;
 	color: #fff;
 }
 #access ul li:hover > ul {
