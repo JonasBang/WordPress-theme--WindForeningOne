@@ -537,12 +537,10 @@ H6 {
 	background: #333;
 	text-shadow: #252525 0 2px 0;
 }
-
 #menu h3 a { 
 	color:#fff;
 	text-decoration:none;
 	}
-	
 #menu h2 {
 	padding: 12px 16px;
 	font-size: 14px;
@@ -551,12 +549,10 @@ H6 {
 	background: #333;
 	text-shadow: #252525 0 2px 0;
 }
-
 #menu h2 a { 
 	color:#fff;
 	text-decoration:none;
 	}	
-
 #menu ul li {
 	margin-bottom: 20px;
 	list-style: none;
@@ -568,7 +564,7 @@ H6 {
 #menu ul li ul li {
 	margin: 0;
 	padding: 10px 0 10px 20px;
-	font-size: 11px;
+	font-size: 12px;
 	font-style: italic;
 	background: url(img/li-bg.gif) left top no-repeat;
 }
