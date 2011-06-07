@@ -279,6 +279,18 @@ h3.storytitle {
 h3.storytitle a:hover {
  text-shadow: #e7e7e5 0 1px 0;
 }
+h3.pagetitle {
+	float: left;
+	width: 440px;
+	padding: 0 0 5px 0;
+	line-height: 1.2em;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: #afc1c9 0 1px 0;
+}
+h3.pagetitle a:hover {
+ text-shadow: #e7e7e5 0 1px 0;
+}
 .comment-count {
 	float: right;
 	padding-top: 10px;
