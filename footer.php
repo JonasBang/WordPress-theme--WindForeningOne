@@ -15,8 +15,7 @@
 	<div class="footerlinks">
 		<div class="allrights">&copy; <?php bloginfo('name');?> - All rights reserved</div>
 		<div class="credit">
-Design inherited from Organic Theme by:<br />
-<a href="http://www.theforge.co.za" title="Cape Town Web Designers">The Forge Web Creations</a></div>
+Design by: <a href="http://www.theforge.co.za" title="Cape Town Web Designers">The Forge Web Creations</a></div>
 	</div>
 
 </div>
