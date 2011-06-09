@@ -11,7 +11,7 @@ array(    "name" => "",
 
 array(    "name" => "Theme Colour:<br />",
         "desc" => "",
-        "id" => $shortname."_theme_style",
+        "id" => "organic_theme_style",
         "std" => "",
         "type" => "select",
 		"options" => $diff_stylesheets),		
