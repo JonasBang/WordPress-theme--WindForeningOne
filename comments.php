@@ -25,11 +25,11 @@ if ( post_password_required() ) : ?>
 </ol>
 
 <?php else : // If there are no comments yet ?>
-	<p><?php _e('Ingen kommentarer.'); ?></p>
+
 <?php endif; ?>
 
 
-
+<?php if ( is_user_logged_in() ) : ?>
 <?php if ( comments_open() ) : ?>
 <h6 id="postcomment"><?php _e('Skriv kommentar'); ?></h6>
 
@@ -54,7 +54,7 @@ if ( post_password_required() ) : ?>
 <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" />
 <label for="url"><small><?php _e('Website'); ?></small></label></p>
 
-<?php endif; ?>
+<?php endif; // is_user_logged_in() ?>
 
 <!--<p><small><strong>XHTML:</strong> <?php printf(__('You can use these tags: %s'), allowed_tags()); ?></small></p>-->
 
@@ -71,4 +71,5 @@ if ( post_password_required() ) : ?>
 
 <?php else : // Comments are closed ?>
 <p><?php _e('Sorry, the comment form is closed at this time.'); ?></p>
-<?php endif; ?>
+<?php endif; // comments_open() ?>
+<?php endif; // is_user_logged_in() ?>
