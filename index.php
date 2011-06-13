@@ -34,7 +34,7 @@ get_header();
 <?php endif; ?>
 
 <?php endwhile; else: ?>
-<p><?php _e('Beklager, ingen indlæg matcher dine kriterier.'); ?></p>
+<p><?php _e('Beklager, ingen indl&#230;g matcher dine kriterier.'); ?></p>
 <?php endif; ?>
 <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } else { ?>
         <div class="navigation">
