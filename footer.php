@@ -15,7 +15,7 @@
 	<div class="footerlinks">
 		<div class="allrights">&copy; <?php bloginfo('name');?> - All rights reserved</div>
 		<div class="credit">
-Design by: <a href="http://www.theforge.co.za" title="Cape Town Web Designers">The Forge Web Creations</a> | Theme by: <a href="http://www.uhuru.dk" title="Uhuru Web Design">Uhuru Web Design</a></div>
+Theme by: <a href="http://www.uhuru.dk" title="Uhuru Web Solutions">Uhuru Web Solutions</a> | Design by: <a href="http://www.theforge.co.za" title="Cape Town Web Designers">The Forge Web Creations</a></div>
 	</div>
 
 </div>
