@@ -11,6 +11,13 @@
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/styles/<?php echo get_option('organic_theme_style'); ?>.css" type="text/css" media="screen, projection" />
+	<!--[if lt IE 7]>
+		<style media="screen" type="text/css">
+		#container {
+			height:100%;
+		}
+		</style>
+	<![endif]-->
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php //comments_popup_script(); // off by default ?>

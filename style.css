@@ -33,6 +33,9 @@ body {
 	line-height: 1em;
 	color: #333;
 }
+html, body {
+	height: 100%;
+}
 
 table {
 	border-collapse: separate;
@@ -138,6 +141,8 @@ body {
 #rap {
 	width: 960px;
 	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
 }
 
 #header {
@@ -149,6 +154,7 @@ body {
 	width: 920px;
 	margin: 0 20px;
 	background: #fff url(img/content-bg.gif) center top no-repeat;
+	padding-bottom: 84px; /* Height of the footer */
 }
 
 #page-wrap {
@@ -169,6 +175,9 @@ body {
 	margin: 0 20px;
 	padding: 25px 25px 5px 25px;
 	background: #333;
+	position: absolute;
+	bottom: 0;
+	height: 84px; /* Height of the footer */
 }
 
 /* Header */
