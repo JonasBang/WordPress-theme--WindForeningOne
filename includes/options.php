@@ -1,7 +1,7 @@
 <?php
 $options = array (
 
-array(    "name" => "JB Wind Two by Jonas Bang",
+array(    "name" => "Wind Forening One by Jonas Bang",
         "type" => "title"),
 
 array(    "type" => "open"),

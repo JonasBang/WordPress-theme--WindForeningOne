@@ -34,12 +34,12 @@ add_action('init', organic_enqueue_js(),1);
  * @since Twenty Ten 1.0
  * @uses register_sidebar
  */
-function jbwindtwo_widgets_init() {
+function windforeningone_widgets_init() {
 	// Area 1, located at the top of the sidebar.
 	register_sidebar( array(
-		'name' => __( 'Sidebar Widget Area', 'jbwindtwo' ),
+		'name' => __( 'Sidebar Widget Area', 'windforeningone' ),
 		'id' => 'sidebar-widget-area',
-		'description' => __( 'The sidebar widget area', 'jbwindtwo' ),
+		'description' => __( 'The sidebar widget area', 'windforeningone' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -48,9 +48,9 @@ function jbwindtwo_widgets_init() {
 
 	/* Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Secondary Widget Area', 'jbwindtwo' ),
+		'name' => __( 'Secondary Widget Area', 'windforeningone' ),
 		'id' => 'secondary-widget-area',
-		'description' => __( 'The secondary widget area', 'jbwindtwo' ),
+		'description' => __( 'The secondary widget area', 'windforeningone' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -59,9 +59,9 @@ function jbwindtwo_widgets_init() {
 
 	// Area 3, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'First Footer Widget Area', 'jbwindtwo' ),
+		'name' => __( 'First Footer Widget Area', 'windforeningone' ),
 		'id' => 'first-footer-widget-area',
-		'description' => __( 'The first footer widget area', 'jbwindtwo' ),
+		'description' => __( 'The first footer widget area', 'windforeningone' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -70,9 +70,9 @@ function jbwindtwo_widgets_init() {
 
 	// Area 4, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Second Footer Widget Area', 'jbwindtwo' ),
+		'name' => __( 'Second Footer Widget Area', 'windforeningone' ),
 		'id' => 'second-footer-widget-area',
-		'description' => __( 'The second footer widget area', 'jbwindtwo' ),
+		'description' => __( 'The second footer widget area', 'windforeningone' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -81,9 +81,9 @@ function jbwindtwo_widgets_init() {
 
 	// Area 5, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Third Footer Widget Area', 'jbwindtwo' ),
+		'name' => __( 'Third Footer Widget Area', 'windforeningone' ),
 		'id' => 'third-footer-widget-area',
-		'description' => __( 'The third footer widget area', 'jbwindtwo' ),
+		'description' => __( 'The third footer widget area', 'windforeningone' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
@@ -92,24 +92,24 @@ function jbwindtwo_widgets_init() {
 
 	// Area 6, located in the footer. Empty by default.
 	register_sidebar( array(
-		'name' => __( 'Fourth Footer Widget Area', 'jbwindtwo' ),
+		'name' => __( 'Fourth Footer Widget Area', 'windforeningone' ),
 		'id' => 'fourth-footer-widget-area',
-		'description' => __( 'The fourth footer widget area', 'jbwindtwo' ),
+		'description' => __( 'The fourth footer widget area', 'windforeningone' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
 }
-/** Register sidebars by running jbwindtwo_widgets_init() on the widgets_init hook. */
-add_action( 'widgets_init', 'jbwindtwo_widgets_init' );
+/** Register sidebars by running windforeningone_widgets_init() on the widgets_init hook. */
+add_action( 'widgets_init', 'windforeningone_widgets_init' );
 
 
 /* VARIABLES */	
 
 include("includes/reset.php");	
-$themename = "JB Wind Two";
-$shortname = "jbwindtwo";
+$themename = "Wind Forening One";
+$shortname = "windforeningone";
 $diff_stylesheets = array("Blue","Green","Brown");
 $organic_pages_ob = get_pages('sort_column=menu_order');
 $organic_pages = array();
@@ -414,10 +414,10 @@ case "checkbox":
 add_action('admin_menu', 'mytheme_add_admin'); 
 /* END ADD MENU */
 
-/** Tell WordPress to run jbwindtwo_setup() when the 'after_setup_theme' hook is run. */
-add_action( 'after_setup_theme', 'jbwindtwo_setup' );
+/** Tell WordPress to run windforeningone_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'windforeningone_setup' );
 
-if ( ! function_exists( 'jbwindtwo_setup' ) ):
+if ( ! function_exists( 'windforeningone_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -425,7 +425,7 @@ if ( ! function_exists( 'jbwindtwo_setup' ) ):
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  *
- * To override jbwindtwo_setup() in a child theme, add your own jbwindtwo_setup to your child theme's
+ * To override windforeningone_setup() in a child theme, add your own windforeningone_setup to your child theme's
  * functions.php file.
  *
  * @uses add_theme_support() To add support for post thumbnails and automatic feed links.
@@ -439,11 +439,11 @@ if ( ! function_exists( 'jbwindtwo_setup' ) ):
  *
  * @since Twenty Ten 1.0
  */
-function jbwindtwo_setup() {
+function windforeningone_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Navigation', 'jbwindtwo' ),
+		'primary' => __( 'Primary Navigation', 'windforeningone' ),
 	) );
 }
 endif;
